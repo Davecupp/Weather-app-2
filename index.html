@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+	<title>Weather App</title>
+
+	<!-- CSS BootStrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- BootStrap for JQuery -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+	<!-- JavaScript BootStrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Linking the  css stylesheet to index.html -->
+<link rel="stylesheet" href=main.css type="text/css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Weather App</h1>
+
+<div class="zipgroup">
+	<div class="input-group">
+		<input type="number" id="zipInput" class="form-control" placeholder="Enter Zip Code...">
+		<span class="input-group-btn">
+			<button type="button" class="btn btn-primary" id="weatherButton" onclick="test();">Get Weather</button>		
+		</span>
+	</div>
+</div>
+
+<br />
+
+	<div id="output">
+
+		<div class="panel panel-info">
+			<div class="panel-heading">City</div>
+			<div class="panel-body">
+				<p id="city"></p>
+		</div>
+		</div>
+
+		<div class="panel panel-info">
+			<div class="panel-heading">Temperature</div>
+			<div class="panel-body">
+				<table class="table">
+				<tr>
+					<th>Kelvin</th>
+					<th>Clesius</th>
+					<th>Fahrenheit</th>
+				</tr>
+				<tr>
+					<td><p id= "tempKelvin"></p></td>
+					<td><p id= "tempCelsius"></p></td>
+					<td><p id= "tempFahrenheit"></p></td>
+				</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="panel panel-info">
+			<div class="panel-heading">Condition</div>
+			<div class="panel-body">
+			<p id="condition"></p>
+		</div>
+		</div>		
+
+		<div class="panel panel-info">
+			<div class="panel-heading">Season Display</div>
+			<div class="panel-body">
+			(image display)
+		</div>
+			
+
+	</div>
+
+	<div id="error" class="alert alert-danger" role="alert">
+	This is where the error message goes.
+	</div>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

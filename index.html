@@ -29,7 +29,7 @@
 	<div class="input-group">
 		<input type="number" id="zipInput" class="form-control" placeholder="Enter Zip Code...">
 		<span class="input-group-btn">
-			<button type="button" class="btn btn-primary" id="weatherButton" onclick="test();">Get Weather</button>		
+			<button type="button" class="btn btn-primary" id="weatherButton">Get Weather</button>		
 		</span>
 	</div>
 </div>
@@ -41,7 +41,7 @@
 		<div class="panel panel-info">
 			<div class="panel-heading">City</div>
 			<div class="panel-body">
-				<p id="city"></p>
+			<p id="city"></p>
 		</div>
 		</div>
 
@@ -73,14 +73,12 @@
 		<div class="panel panel-info">
 			<div class="panel-heading">Season Display</div>
 			<div class="panel-body">
-			(image display)
+			<img src='' alt='Seasonal Display.' width='250' id='weatherImage' />
 		</div>
-			
-
 	</div>
 
 	<div id="error" class="alert alert-danger" role="alert">
-	This is where the error message goes.
+	<p id="errorMessage"></p>
 	</div>
 
 
